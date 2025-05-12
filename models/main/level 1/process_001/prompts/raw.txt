@@ -1,0 +1,58 @@
+<process id="Process_1" isExecutable="false">
+    <startEvent id="StartEvent_1" name="Start">
+    <outgoing />
+    </startEvent>
+    <task id="Activity_02r7xaq" aux-font-size="16px" name="Check loan application">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_02d0oko" aux-font-size="16px" name="Appraise property">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_08cbrgi" aux-font-size="16px" name="Check credit history">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_0vma5lg" aux-font-size="16px" name="Analyze viability">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_0eat6px" aux-font-size="16px" name="Prepare notification">
+    <incoming />
+    <outgoing />
+    </task>
+    <endEvent id="Event_0w0qv5v" name="End">
+    <incoming />
+    </endEvent>
+    <task id="Activity_1sar4e1" aux-font-size="16px" name="AML Check">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_0o2ojeh" aux-font-size="16px" name="Send notification">
+    <incoming />
+    <outgoing />
+    </task>
+    <parallelGateway id="Gateway_0nmpe12" name="AND-split">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    </parallelGateway>
+    <parallelGateway id="Gateway_146y8zs" name="AND-join">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </parallelGateway>
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_1i3zn28" sourceRef="StartEvent_1" targetRef="Activity_02r7xaq" />
+    <sequenceFlow id="Flow_1hnhrjm" sourceRef="Activity_02r7xaq" targetRef="Gateway_0nmpe12" />
+    <sequenceFlow id="Flow_1279d43" sourceRef="Gateway_0nmpe12" targetRef="Activity_08cbrgi" />
+    <sequenceFlow id="Flow_0qkv9uj" sourceRef="Activity_08cbrgi" targetRef="Activity_0vma5lg" />
+    <sequenceFlow id="Flow_0jtbwl8" sourceRef="Activity_0vma5lg" targetRef="Gateway_146y8zs" />
+    <sequenceFlow id="Flow_0rajtx0" sourceRef="Gateway_146y8zs" targetRef="Activity_0eat6px" />
+    <sequenceFlow id="Flow_1ujr1jr" sourceRef="Activity_1sar4e1" targetRef="Gateway_146y8zs" />
+    <sequenceFlow id="Flow_0v743nu" sourceRef="Activity_0eat6px" targetRef="Activity_0o2ojeh" />
+    <sequenceFlow id="Flow_08i82lb" sourceRef="Activity_0o2ojeh" targetRef="Event_0w0qv5v" />
+    <sequenceFlow id="Flow_1oqorvg" sourceRef="Activity_02d0oko" targetRef="Activity_1sar4e1" />
+    <sequenceFlow id="Flow_0fnrnxp" sourceRef="Gateway_0nmpe12" targetRef="Activity_02d0oko" />
+</process>

@@ -1,0 +1,84 @@
+<process id="Process_1" isExecutable="false">
+    <startEvent id="Event_1nd6n55" name="START">
+    <outgoing />
+    </startEvent>
+    <task id="Activity_0qwwqoi" name="PURCHASE REQUEST">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_14eqhh0" name="CHECK AMOUNT TRESHOLD">
+    <incoming />
+    <outgoing />
+    </task>
+    <exclusiveGateway id="Gateway_0g6lu1k" name="OR-split">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    </exclusiveGateway>
+    <task id="Activity_1r1xvrk" name="MANAGER APPROVAL">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_12y30kq" name="PREPARE LEGAL DOCUMENTS">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_1t7o5f2" name="LEGAL REVIEW">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    </task>
+    <exclusiveGateway id="Gateway_1leiidv" name="OR-join">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </exclusiveGateway>
+    <task id="Activity_1mjwi5y" name="SEND TO SUPPLIER">
+    <incoming />
+    <outgoing />
+    </task>
+    <parallelGateway id="Gateway_11ma2b2" name="AND-split">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    </parallelGateway>
+    <task id="Activity_0f75cjl" name="PREPARE PRODUCT IN WAREHOUSE">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_1oh0xfu" name="COMPOSE DELIVERY AND TOLL DECLARATION">
+    <incoming />
+    <outgoing />
+    </task>
+    <parallelGateway id="Gateway_13jz0zt" name="AND-JOIN">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </parallelGateway>
+    <task id="Activity_1s79q4t" name="SEND OUT THE PRODUCT">
+    <incoming />
+    <outgoing />
+    </task>
+    <endEvent id="Event_14ymk7t" name="END">
+    <incoming />
+    </endEvent>
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_0dy1zux" sourceRef="Event_1nd6n55" targetRef="Activity_0qwwqoi" />
+    <sequenceFlow id="Flow_13xs3fi" sourceRef="Activity_0qwwqoi" targetRef="Activity_14eqhh0" />
+    <sequenceFlow id="Flow_1n9fc2r" sourceRef="Activity_14eqhh0" targetRef="Gateway_0g6lu1k" />
+    <sequenceFlow id="Flow_1mk0604" sourceRef="Gateway_0g6lu1k" targetRef="Activity_1r1xvrk" />
+    <sequenceFlow id="Flow_1sukveu" sourceRef="Gateway_0g6lu1k" targetRef="Activity_12y30kq" />
+    <sequenceFlow id="Flow_0hq89yx" sourceRef="Activity_12y30kq" targetRef="Activity_1t7o5f2" />
+    <sequenceFlow id="Flow_1fyf28k" sourceRef="Activity_1t7o5f2" targetRef="Activity_12y30kq" />
+    <sequenceFlow id="Flow_0k9ol6t" sourceRef="Activity_1t7o5f2" targetRef="Gateway_1leiidv" />
+    <sequenceFlow id="Flow_14g6q0a" sourceRef="Activity_1r1xvrk" targetRef="Gateway_1leiidv" />
+    <sequenceFlow id="Flow_1of6hw0" sourceRef="Gateway_1leiidv" targetRef="Activity_1mjwi5y" />
+    <sequenceFlow id="Flow_0twnq0u" sourceRef="Activity_1mjwi5y" targetRef="Gateway_11ma2b2" />
+    <sequenceFlow id="Flow_0o3awit" sourceRef="Gateway_11ma2b2" targetRef="Activity_0f75cjl" />
+    <sequenceFlow id="Flow_03xknzn" sourceRef="Gateway_11ma2b2" targetRef="Activity_1oh0xfu" />
+    <sequenceFlow id="Flow_0pxexx7" sourceRef="Activity_1oh0xfu" targetRef="Gateway_13jz0zt" />
+    <sequenceFlow id="Flow_1e9nt3c" sourceRef="Activity_0f75cjl" targetRef="Gateway_13jz0zt" />
+    <sequenceFlow id="Flow_1qagilo" sourceRef="Gateway_13jz0zt" targetRef="Activity_1s79q4t" />
+    <sequenceFlow id="Flow_1d9kwu8" sourceRef="Activity_1s79q4t" targetRef="Event_14ymk7t" />
+</process>

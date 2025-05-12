@@ -1,0 +1,14 @@
+question_group;question_text;ground_truth
+1;Can task "MANAGER APPROVAL" occur before task "CHECK AMOUNT TRESHOLD"?;NO
+1;Can task "PREPARE LEGAL DOCUMENTS" occur after task "CHECK AMOUNT TRESHOLD"?;YES
+1;Does the execution of "COMPOSE DELIVERY AND TOLL DECLARATION" imply that "SEND OUT THE PRODUCT" must follow eventually?;YES
+2;Do tasks "MANAGER APPROVAL" and "LEGAL REVIEW" ever co-occur, meaning they're not mutually exclusive?;NO
+2;Does task " LEGAL REVIEW" only occur if task "PREPARE LEGAL DOCUMENTS" also occurs?;YES
+2;Can task "SEND TO SUPPLIER" occur without "LEGAL REVIEW" or "MANAGER APPROVAL"?;NO
+3;In each instance, does task "LEGAL REVIEW" appear exactly once?;NO
+3;Can task "PREPARE LEGAL DOCUMENTS" repeat more than 3 times in a single instance?;YES
+3;Are tasks "PREPARE LEGAL DOCUMENTS" and "LEGAL REVIEW" always repeated together?;YES
+4;Does task "PREPARE LEGAL DOCUMENTS" need to be completed in order for "LEGAL REVIEW" to be executed in the same instance?;YES
+4;Is there a direct dependency between task "MANAGER APPROVAL" and task "LEGAL REVIEW"?;NO
+4;Is task "SEND TO SUPPLIER" a prerequisite for starting task "PREPARE PRODUCT IN WAREHOUSE"?;YES
+5;Can the sequence "CHECK AMOUNT TRESHOLD", "PREPARE LEGAL DOCUMENTS", "LEGAL REVIEW", "PREPARE LEGAL DOCUMENTS" be executed?;YES

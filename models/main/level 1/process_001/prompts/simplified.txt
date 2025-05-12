@@ -1,0 +1,37 @@
+The tasks in a BPMN model represent specific activities within the business process. Each task signifies a step that must be performed to complete the process. The tasks included in this BPMN model are:
+
+Check loan application (task)
+Appraise property (task)
+Check credit history (task)
+Analyze viability (task)
+Prepare notification (task)
+AML Check (task)
+Send notification (task)
+
+Events in a BPMN model represent occurrences that affect the flow of the process. They can signify the start, intermediate, or end of a process. In this BPMN model, the events are:
+
+StartEvent_1 (Start)
+Event_0w0qv5v (End)
+
+Gateways in a BPMN model control the process flow by either diverging into multiple paths or converging different paths back together. There are two types of gateways:
+
+- Parallel Gateway (AND): This type can only be fired when all its incoming flows are 'active', and its firing activates all its outgoing flows.
+
+- Exclusive Gateway (OR): This type allows only one of its outgoing flows to be taken based on predefined conditions. The choice of which flow to take is determined at runtime.
+
+Gateway_0nmpe12 (AND-split)
+Gateway_146y8zs (AND-join)
+
+Flows in a BPMN model define the sequence of execution for tasks, events, and gateways. The flows in this model are:
+
+Start -> Check loan application
+Check loan application -> AND-split
+AND-split -> Check credit history
+AND-split -> Appraise property
+Check credit history -> Analyze viability
+Analyze viability -> AND-join
+AND-join -> Prepare notification
+Prepare notification -> Send notification
+AML Check -> AND-join
+Send notification -> End
+Appraise property -> AML Check

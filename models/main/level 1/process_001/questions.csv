@@ -1,0 +1,14 @@
+question_group;question_text;ground_truth
+1;Can task "Check credit history" occur before task "Check loan application"?;NO
+1;Can task "Appraise property" occur after task "Check loan application"?;YES
+1;Does the execution of "AML Check" imply that "Prepare notification" must follow eventually?;YES
+2;Do tasks "AML Check" and "Analyze viability" ever co-occur, meaning they're not mutually exclusive?;YES
+2;Does task "Analyze viability" only occur if task "Check loan application" also occurs?;YES
+2;Can task "Prepare notification" occur without "Appraise property", "Check credit history" or "AML Check"?;NO
+3;In each instance, does task "AML Check" appear exactly once?;YES
+3;Can task "Check loan application" repeat more than 3 times in a single instance?;NO
+3;Are tasks "AML Check" and "Appraise property" always repeated together?;NO
+4;Does task "AML Check" need to be completed in order for "Prepare notification" to be executed in the same instance?;YES
+4;Is there a direct dependency between task "Appraise property" and task "Analyze viability"?;NO
+4;Is task "AML Check" a prerequisite for starting task "Prepare notification"?;YES
+5;Can the sequence "Check loan application", "Appraise property", "Analyze viability", "Prepare notification" be executed?;NO

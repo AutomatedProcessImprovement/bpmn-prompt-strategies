@@ -1,0 +1,19 @@
+This BPMN process flow represents a structured sequence of tasks. Each task leads to one or more subsequent tasks.
+
+From [START] to [PURCHASE REQUEST]
+From [PURCHASE REQUEST] to [CHECK AMOUNT TRESHOLD]
+From [CHECK AMOUNT TRESHOLD] to [MANAGER APPROVAL] OR [PREPARE LEGAL DOCUMENTS]
+From [MANAGER APPROVAL] to [SEND TO SUPPLIER]
+From [PREPARE LEGAL DOCUMENTS] to [LEGAL REVIEW]
+From [SEND TO SUPPLIER] to [PREPARE PRODUCT IN WAREHOUSE] AND [COMPOSE DELIVERY AND TOLL DECLARATION]
+From [LEGAL REVIEW] to [PREPARE LEGAL DOCUMENTS]
+From [LEGAL REVIEW] to [SEND TO SUPPLIER]
+From [PREPARE PRODUCT IN WAREHOUSE] to [SEND OUT THE PRODUCT]
+From [COMPOSE DELIVERY AND TOLL DECLARATION] to [SEND OUT THE PRODUCT]
+From [SEND OUT THE PRODUCT] to [END]
+
+Explanations for edge types:
+
+"From [A] to [B]" denotes a sequential flow indicating that B is executed after A happened.
+"From [A] to [B] and [C]" denotes a flow indicating that both B and C are executed after A happened.
+"From [A] to [B] or [C]" denotes a flow indicating that either B or C (but only one) can be executed after A happened.

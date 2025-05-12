@@ -1,0 +1,178 @@
+<process id="Process_114nrso" isExecutable="false">
+    <startEvent id="StartEvent_1rq8aoe" name="START">
+    <outgoing />
+    </startEvent>
+    <task id="Activity_18oekmk" name="Mfcag0hpk9D">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_01u7snk" name="nzRTSE5N6M0VmhO">
+    <incoming />
+    <outgoing />
+    </task>
+    <parallelGateway id="Gateway_0zpizct">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    </parallelGateway>
+    <task id="Activity_0a7p8c3" name="eCf5D2kqxO26isW">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_1r8cioj" name="BUnFi016oV1lxjw">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_0oqw4tm" name="S9ZSbxQ4IClZY5k">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_0qrea5u" name="GYsytF1k0348i0G">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_18zzhdh" name="ELwuJQ1n2M7TXBS">
+    <incoming />
+    <outgoing />
+    </task>
+    <exclusiveGateway id="Gateway_08lynd7">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    </exclusiveGateway>
+    <task id="Activity_19i8iul" name="HyTfsLyY72gom92">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_13gswag" name="DKBpKux7x7ow8C5">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_1idi1rn" name="xoV60NvHePrxEL6">
+    <incoming />
+    <outgoing />
+    </task>
+    <exclusiveGateway id="Gateway_014myy9">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </exclusiveGateway>
+    <parallelGateway id="Gateway_0pckvrj">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </parallelGateway>
+    <exclusiveGateway id="Gateway_0npr6fs">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    </exclusiveGateway>
+    <task id="Activity_1hzo17n" name="cdNqQmM7wopCZAb">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_1u5dgwv" name="TlA2xP931pyQH6V">
+    <incoming />
+    <outgoing />
+    </task>
+    <exclusiveGateway id="Gateway_0ecg6jx">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    <outgoing />
+    </exclusiveGateway>
+    <task id="Activity_17f7ex2" name="VrM4L9wUEsyAq5B">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_05lp71w" name="q5mYY5dcwDfKEd">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </task>
+    <parallelGateway id="Gateway_1ci6l2o">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    </parallelGateway>
+    <task id="Activity_08gqrwi" name="B2EVBqCXlHYkUEV">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_1scuryy" name="yPoEMlWFG58llAG">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_0gftwxu" name="t1IMLAOx023C3Lt">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </task>
+    <exclusiveGateway id="Gateway_0b4acdo">
+    <incoming />
+    <outgoing />
+    <outgoing />
+    </exclusiveGateway>
+    <task id="Activity_0nkw75r" name="PRxaoYT1VpHsK5z">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_0i4e7tm" name="Isk0is1iWZp4OKR">
+    <incoming />
+    <incoming />
+    <outgoing />
+    </task>
+    <endEvent id="Event_0qidd2m" name="END">
+    <incoming />
+    </endEvent>
+    <task id="Activity_0922k58" name="T5bE4R33wkOo9">
+    <incoming />
+    <outgoing />
+    </task>
+    <task id="Activity_129djut" name="VnI1jPoi2ZXscxX">
+    <incoming />
+    <outgoing />
+    </task>
+    <endEvent id="Event_171qhxw" name="END">
+    <incoming />
+    </endEvent>
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_15l01nm" sourceRef="StartEvent_1rq8aoe" targetRef="Activity_18oekmk" />
+    <sequenceFlow id="Flow_039he99" sourceRef="Activity_18oekmk" targetRef="Activity_01u7snk" />
+    <sequenceFlow id="Flow_104gpqp" sourceRef="Activity_01u7snk" targetRef="Gateway_0zpizct" />
+    <sequenceFlow id="Flow_0akxeil" sourceRef="Gateway_0zpizct" targetRef="Activity_0a7p8c3" />
+    <sequenceFlow id="Flow_02m10na" sourceRef="Gateway_0zpizct" targetRef="Activity_1r8cioj" />
+    <sequenceFlow id="Flow_0snj45c" sourceRef="Activity_0a7p8c3" targetRef="Activity_0oqw4tm" />
+    <sequenceFlow id="Flow_1okuhxj" sourceRef="Activity_0oqw4tm" targetRef="Gateway_0pckvrj" />
+    <sequenceFlow id="Flow_11etqj4" sourceRef="Activity_1r8cioj" targetRef="Activity_18zzhdh" />
+    <sequenceFlow id="Flow_19bs24d" sourceRef="Activity_18zzhdh" targetRef="Gateway_08lynd7" />
+    <sequenceFlow id="Flow_1y3vz6g" sourceRef="Gateway_08lynd7" targetRef="Activity_19i8iul" />
+    <sequenceFlow id="Flow_05k56oh" sourceRef="Gateway_08lynd7" targetRef="Activity_13gswag" />
+    <sequenceFlow id="Flow_15ayg66" sourceRef="Activity_13gswag" targetRef="Gateway_014myy9" />
+    <sequenceFlow id="Flow_1i4jnv1" sourceRef="Activity_19i8iul" targetRef="Gateway_014myy9" />
+    <sequenceFlow id="Flow_1by6snh" sourceRef="Gateway_014myy9" targetRef="Activity_1idi1rn" />
+    <sequenceFlow id="Flow_0jwy58g" sourceRef="Activity_1idi1rn" targetRef="Gateway_0pckvrj" />
+    <sequenceFlow id="Flow_1ooedkx" sourceRef="Gateway_0pckvrj" targetRef="Activity_0qrea5u" />
+    <sequenceFlow id="Flow_0to6xqo" sourceRef="Activity_0qrea5u" targetRef="Gateway_0npr6fs" />
+    <sequenceFlow id="Flow_0gy34ea" sourceRef="Gateway_0npr6fs" targetRef="Activity_1hzo17n" />
+    <sequenceFlow id="Flow_1e48k1i" sourceRef="Activity_1hzo17n" targetRef="Activity_1u5dgwv" />
+    <sequenceFlow id="Flow_1guh2ri" sourceRef="Activity_1u5dgwv" targetRef="Gateway_0ecg6jx" />
+    <sequenceFlow id="Flow_1hi89rd" sourceRef="Gateway_0ecg6jx" targetRef="Activity_17f7ex2" />
+    <sequenceFlow id="Flow_1db91l8" sourceRef="Activity_17f7ex2" targetRef="Activity_0qrea5u" />
+    <sequenceFlow id="Flow_00y9ny0" sourceRef="Gateway_0ecg6jx" targetRef="Activity_05lp71w" />
+    <sequenceFlow id="Flow_1m7kmou" sourceRef="Gateway_0npr6fs" targetRef="Activity_05lp71w" />
+    <sequenceFlow id="Flow_05vrods" sourceRef="Activity_05lp71w" targetRef="Gateway_1ci6l2o" />
+    <sequenceFlow id="Flow_1igq242" sourceRef="Gateway_1ci6l2o" targetRef="Activity_08gqrwi" />
+    <sequenceFlow id="Flow_1kiijao" sourceRef="Gateway_1ci6l2o" targetRef="Activity_1scuryy" />
+    <sequenceFlow id="Flow_14g2l72" sourceRef="Activity_08gqrwi" targetRef="Activity_0gftwxu" />
+    <sequenceFlow id="Flow_1uyizb9" sourceRef="Activity_0gftwxu" targetRef="Gateway_0b4acdo" />
+    <sequenceFlow id="Flow_1l4d6dj" sourceRef="Gateway_0b4acdo" targetRef="Activity_0nkw75r" />
+    <sequenceFlow id="Flow_19k7q3z" sourceRef="Activity_0nkw75r" targetRef="Activity_0gftwxu" />
+    <sequenceFlow id="Flow_0kvt7si" sourceRef="Gateway_0b4acdo" targetRef="Activity_0i4e7tm" />
+    <sequenceFlow id="Flow_1y45ian" sourceRef="Activity_0i4e7tm" targetRef="Event_0qidd2m" />
+    <sequenceFlow id="Flow_0xjgee5" sourceRef="Activity_1scuryy" targetRef="Activity_0922k58" />
+    <sequenceFlow id="Flow_04v9cyl" sourceRef="Gateway_0ecg6jx" targetRef="Activity_129djut" />
+    <sequenceFlow id="Flow_0cigs6c" sourceRef="Activity_129djut" targetRef="Event_171qhxw" />
+    <sequenceFlow id="Flow_1cun0tf" sourceRef="Activity_0922k58" targetRef="Activity_0i4e7tm" />
+</process>

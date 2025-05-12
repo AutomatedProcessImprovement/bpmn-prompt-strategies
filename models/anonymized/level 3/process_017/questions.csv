@@ -1,0 +1,29 @@
+question_group;question_text;ground_truth
+1;Is task "xoV60NvHePrxEL6" always preceded by both "HyTfsLyY72gom92" and "DKBpKux7x7ow8C5"?;NO
+1;Can task "q5mYY5dcwDfKEd" occur without task "TlA2xP931pyQH6V" occurring in any possible instance?;YES
+1;Can task "GYsytF1k0348i0G" occur after task "VrM4L9wUEsyAq5B"?;YES
+2;Can task "GYsytF1k0348i0G" occur without "DKBpKux7x7ow8C5" ever beign excecuted?;YES
+2;Do tasks "HyTfsLyY72gom92" and "DKBpKux7x7ow8C5" ever co-occur?;NO
+2;Does task "VrM4L9wUEsyAq5B" only occur if task "GYsytF1k0348i0G" also occurs?;YES
+3;Is there any possible instance where task "q5mYY5dcwDfKEd" does not occur at all?;YES
+3;Does task "cdNqQmM7wopCZAb" always occur at least once in every instance?;NO
+3;Are tasks "BUnFi016oV1lxjw" and "ELwuJQ1n2M7TXBS" repeated together?;NO
+4;Is there a direct dependency between task "BUnFi016oV1lxjw" and task "xoV60NvHePrxEL6"?;YES
+4;Can task "VrM4L9wUEsyAq5B" occur without task "GYsytF1k0348i0G" ever being executed?;NO
+4;Is task "nzRTSE5N6M0VmhO" a prerequisite for starting task "B2EVBqCXlHYkUEV"?;YES
+5;Can the sequence "nzRTSE5N6M0VmhO", "BUnFi016oV1lxjw", "ELwuJQ1n2M7TXBS", "S9ZSbxQ4IClZY5k" be executed?;NO
+1;Is task "GYsytF1k0348i0G" always preceded by both "S9ZSbxQ4IClZY5k" and "xoV60NvHePrxEL6"?;YES
+1;Can task "Isk0is1iWZp4OKR" occur without task "t1IMLAOx023C3Lt" occurring in any possible instance?;NO
+1;Can task "GYsytF1k0348i0G" occur after task "q5mYY5dcwDfKEd"?;NO
+2;Can task "Isk0is1iWZp4OKR" occur without "q5mYY5dcwDfKEd" ever beign excecuted?;NO
+2;Do tasks "S9ZSbxQ4IClZY5k" and "Perform risk asessment" ever co-occur?;YES
+2;Does task "VrM4L9wUEsyAq5B" only occur if task "cdNqQmM7wopCZAb" also occurs?;YES
+3;Is there any possible instance where task "Isk0is1iWZp4OKR" does not occur at all?;YES
+3;Does task "Isk0is1iWZp4OKR" always occur at least once in every instance?;NO
+3;Are tasks "VrM4L9wUEsyAq5B" and "GYsytF1k0348i0G" repeated together?;YES
+4;Is there a direct dependency between task "yPoEMlWFG58llAG" and task "Isk0is1iWZp4OKR"?;YES
+4;Can task "Isk0is1iWZp4OKR" occur without task "DKBpKux7x7ow8C5" ever being executed?;YES
+4;Is task "q5mYY5dcwDfKEd" a prerequisite for starting task "t1IMLAOx023C3Lt"?;YES
+5;Can the sequence "GYsytF1k0348i0G", "cdNqQmM7wopCZAb", "TlA2xP931pyQH6V", "VnI1jPoi2ZXscxX" be executed?;YES
+5;Is it possible for these two sequences: "eCf5D2kqxO26isW","S9ZSbxQ4IClZY5k" and "BUnFi016oV1lxjw","ELwuJQ1n2M7TXBS","DKBpKux7x7ow8C5","xoV60NvHePrxEL6" to run simultaneously?;YES
+5;Is sequence "BUnFi016oV1lxjw","ELwuJQ1n2M7TXBS","DKBpKux7x7ow8C5","xoV60NvHePrxEL6" always execute, in each process instance?;NO

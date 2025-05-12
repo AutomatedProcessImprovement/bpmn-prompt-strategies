@@ -1,0 +1,45 @@
+This BPMN process flow represents a structured sequence of tasks. Each task leads to one or more subsequent tasks.
+
+From [START] to [Mfcag0hpk9D]
+From [Mfcag0hpk9D] to [nzRTSE5N6M0VmhO]
+From [nzRTSE5N6M0VmhO] to [Gateway_0zpizct]
+From [Gateway_0zpizct] to [eCf5D2kqxO26isW]
+From [Gateway_0zpizct] to [BUnFi016oV1lxjw]
+From [eCf5D2kqxO26isW] to [S9ZSbxQ4IClZY5k]
+From [BUnFi016oV1lxjw] to [ELwuJQ1n2M7TXBS]
+From [S9ZSbxQ4IClZY5k] to [Gateway_0pckvrj]
+From [ELwuJQ1n2M7TXBS] to [Gateway_08lynd7]
+From [Gateway_0pckvrj] to [GYsytF1k0348i0G]
+From [Gateway_08lynd7] to [HyTfsLyY72gom92]
+From [Gateway_08lynd7] to [DKBpKux7x7ow8C5]
+From [GYsytF1k0348i0G] to [Gateway_0npr6fs]
+From [HyTfsLyY72gom92] to [Gateway_014myy9]
+From [DKBpKux7x7ow8C5] to [Gateway_014myy9]
+From [Gateway_0npr6fs] to [cdNqQmM7wopCZAb]
+From [Gateway_0npr6fs] to [q5mYY5dcwDfKEd]
+From [Gateway_014myy9] to [xoV60NvHePrxEL6]
+From [cdNqQmM7wopCZAb] to [TlA2xP931pyQH6V]
+From [q5mYY5dcwDfKEd] to [Gateway_1ci6l2o]
+From [xoV60NvHePrxEL6] to [Gateway_0pckvrj]
+From [TlA2xP931pyQH6V] to [Gateway_0ecg6jx]
+From [Gateway_1ci6l2o] to [B2EVBqCXlHYkUEV]
+From [Gateway_1ci6l2o] to [yPoEMlWFG58llAG]
+From [Gateway_0ecg6jx] to [VrM4L9wUEsyAq5B]
+From [Gateway_0ecg6jx] to [q5mYY5dcwDfKEd]
+From [Gateway_0ecg6jx] to [VnI1jPoi2ZXscxX]
+From [B2EVBqCXlHYkUEV] to [t1IMLAOx023C3Lt]
+From [yPoEMlWFG58llAG] to [T5bE4R33wkOo9]
+From [VrM4L9wUEsyAq5B] to [GYsytF1k0348i0G]
+From [VnI1jPoi2ZXscxX] to [END]
+From [t1IMLAOx023C3Lt] to [Gateway_0b4acdo]
+From [T5bE4R33wkOo9] to [Isk0is1iWZp4OKR]
+From [Gateway_0b4acdo] to [PRxaoYT1VpHsK5z]
+From [Gateway_0b4acdo] to [Isk0is1iWZp4OKR]
+From [Isk0is1iWZp4OKR] to [END]
+From [PRxaoYT1VpHsK5z] to [t1IMLAOx023C3Lt]
+
+Explanations for edge types:
+
+"From [A] to [B]" denotes a sequential flow indicating that B is executed after A happened.
+"From [A] to [B] and [C]" denotes a flow indicating that both B and C are executed after A happened.
+"From [A] to [B] or [C]" denotes a flow indicating that either B or C (but only one) can be executed after A happened.

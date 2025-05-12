@@ -1,0 +1,2 @@
+Nodes: Check loan application, Appraise property, Check credit history, Analyze viability, Prepare notification, AML Check, Send notification
+Edges: (Start, Check loan application), (Check loan application, Check credit history), (Check loan application, Appraise property), (Check credit history, Analyze viability), (Analyze viability, Prepare notification), (Prepare notification, Send notification), (AML Check, Prepare notification), (Send notification, End), (Appraise property, AML Check)

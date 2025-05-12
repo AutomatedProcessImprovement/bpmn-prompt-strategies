@@ -1,0 +1,16 @@
+This BPMN process flow represents a structured sequence of tasks. Each task leads to one or more subsequent tasks.
+
+From "Start" to "Check loan application".
+From "Check loan application" to "Check credit history" AND "Appraise property".
+From "Check credit history" to "Analyze viability".
+From "Analyze viability" to "Prepare notification".
+From "Prepare notification" to "Send notification".
+From "AML Check" to "Prepare notification".
+From "Send notification" to "End".
+From "Appraise property" to "AML Check".
+
+Explanations for edge types:
+
+"From [A] to [B]" denotes a sequential flow indicating that B is executed after A happened.
+"From [A] to [B] and [C]" denotes a flow indicating that both B and C are executed after A happened.
+"From [A] to [B] or [C]" denotes a flow indicating that either B or C (but only one) can be executed after A happened.
